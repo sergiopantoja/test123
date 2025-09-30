@@ -1,0 +1,48 @@
+* {
+    background-color: rgb(195, 255, 250);
+}
+
+.sigmar-one-regular {
+  font-family: "Sigmar One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+    color:rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#instructions {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50dvh;
+}
+
+#cat {
+    width: 400px;
+    transition: opacity 2s ease-in-out;
+}
+
+#cat:hover {
+    animation: spin 0.5s linear infinite;
+    opacity: 0%;
+}
